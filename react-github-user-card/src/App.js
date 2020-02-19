@@ -6,7 +6,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      users: [],
+      profile: [],
       followers:[],
       userText: "",
       error: ""
@@ -79,9 +79,9 @@ class App extends Component {
       <div className="App">
         <h1>User github</h1>
         <div>
-          {/* <p>
+          <p>
             <img src={this.state.profile.avatar_url} />
-          </p> */}
+          </p>
           <p>{this.state.profile.login}</p>
           <p>Profile: 
             <a href={this.state.profile.html_url}>
